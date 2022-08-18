@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Tip Calculator</title>
+</head>
+
+<body>
+    <nav>
+        <h1>TIP<span id="calculator">Calculator</span></h1>
+        <a href="https://github.com/andrealmeida-24" target="_blank">
+            <img id="github-logo" src="GitHub-Mark-Light-120px-plus.png">
+        </a>
+        <a href="https://www.linkedin.com/in/andr%C3%A9-almeida-web-dev/" target="_blank">
+            <img id="linkedin-logo" src="linkedIn.png">
+        </a>
+    </nav>
+    <div id="Calculator-Container">
+        <div id="Bill-Amount">
+            <h2>Bill</h2>
+            <input id="id-bill" type="text" placeholder="How much €?">
+        </div>
+        <div id="Tip-Amount">
+            <h2>Tip</h2>
+            <h2 id="show-tip"></h2>
+        </div>
+        <hr>
+        <div id="Total-Amount">
+            <h2>Total Amount</h2>
+            <h2 id="show-amount"></h2>
+        </div>
+        <div id="Tip-Percentage">
+            <h2>Tip <span id="percentage">( % )</span></h2>
+            <input id="tip-percentage" type="text" placeholder="How much %?">
+        </div>
+        <div id="Number-of-People">
+            <h2>No. Of People</h2>
+            <input id="number-of-people" type="text" placeholder="How many?">
+        </div>
+        <div class="buttons">
+            <button id="calculate-button">Calculate</button>
+            <a href="index.html">
+                <button id="reset-button">❌ Reset</button>
+            </a>
+        </div>
+        <div id="Lower-Part-Calculator-Container">
+            <div id="Tip-per-Person">
+                <h2>Tip per Person</h2>
+                <h2 id="show-tip-per-person"></h2>
+            </div>
+            <div id="Total-per-Person">
+                <h2>Total per Person</h2>
+                <h2 id="show-total-per-person"></h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="tipCalculator.js"></script>
+</body>
+
+</html>
