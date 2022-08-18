@@ -44,7 +44,8 @@ h1 {
 }
 
 #Calculator-Container {
-
+    display: flex;
+    flex-direction: column;
     background-color: #ffffff;
     width: 350px;
     max-width: 100%;
@@ -54,6 +55,7 @@ h1 {
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
+    margin-top: 60px;
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.1);
 }
 
@@ -131,4 +133,39 @@ input {
     padding: 5px 10px;
     text-transform: uppercase;
     margin-left: 10px;
+}
+
+@media (orientation: landscape) {
+    #Calculator-Container {
+        max-height: 100%;
+        padding: 20px 40px;
+    }
+
+    #Bill-Amount,
+    #Tip-Amount,
+    #Total-Amount,
+    #Number-of-People,
+    #Tip-per-Person,
+    #Total-per-Person {
+        margin: 8px 0;
+        font-size: 0.6em;
+    }
+
+    #Tip-Percentage {
+        margin: 15px 0 0 0;
+        font-size: 0.6em;
+    }
+
+    #percentage {
+        font-size: 0.5em;
+    }
+
+    #Lower-Part-Calculator-Container {
+        margin: 40px 0 0 0;
+        padding: 5px 12px;
+    }
+
+    .buttons {
+        margin-top: 20px;
+    }
 }
