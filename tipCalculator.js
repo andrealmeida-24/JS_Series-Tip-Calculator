@@ -24,10 +24,10 @@ calculateButton.addEventListener("click", () => {
     showTip.innerHTML = `${calculateTip}€`;
     showAmount.innerHTML = `is ${Number(bill) + calculateTip}€`;
 
-    calculateTipPerPerson = calculateTip / persons;
+    calculateTipPerPerson = (calculateTip / persons).toFixed(2);
     showTipPerPerson.innerText = `${calculateTipPerPerson}€`;
 
     calculateTotalPerPerson = Number(bill) / persons;
-    showTotalPerPerson.innerText = `${calculateTotalPerPerson}€`;
+    showTotalPerPerson.innerText = `${calculateTotalPerPerson.toFixed(2)}€`;
 
 });
