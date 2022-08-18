@@ -5,6 +5,11 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -39,7 +44,7 @@ h1 {
 
 #Calculator-Container {
     background-color: #ffffff;
-    width: 450px;
+    width: 350px;
     padding: 50px 40px;
     border-radius: 10px;
     position: absolute;
